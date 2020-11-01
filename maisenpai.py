@@ -1,4 +1,5 @@
 import discord
+import os
 
 
 class chatbot(discord.Client):
@@ -99,5 +100,5 @@ class chatbot(discord.Client):
 if __name__ == "__main__":
     
     client = chatbot()
-
-    client.run("NzcxMTY4NjcyOTY1NDU5OTY5.X5oMyw.KO3PuzupYkp4Cn_vboJ8yLLrVs4") 
+    access_token = os.environ["BOT_TOKEN"]
+    client.run("access_token") 
